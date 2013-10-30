@@ -1,4 +1,4 @@
-UIColor-RandomColor
+UIColor+RandomColor
 ===================
 
 Generates Random UIColors
