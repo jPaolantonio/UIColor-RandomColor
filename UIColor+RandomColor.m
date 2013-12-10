@@ -8,17 +8,17 @@
 
 #import "UIColor+RandomColor.h"
 
-static inline CGFloat randomFloat()
+static inline CGFloat randomCGFloat()
 {
-    return (CGFloat)arc4random()/RAND_MAX;
+    return (CGFloat)arc4random()/UINT;
 }
 
 @implementation UIColor (RandomColor)
 
 + (UIColor *)randomColor {
-    return [UIColor colorWithRed:randomFloat()
-                           green:randomFloat()
-                            blue:randomFloat()
+    return [UIColor colorWithRed:randomCGFloat()
+                           green:randomCGFloat()
+                            blue:randomCGFloat()
                            alpha:1.0];
 }
 
