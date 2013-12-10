@@ -10,7 +10,7 @@
 
 static inline CGFloat randomCGFloat()
 {
-    return (CGFloat)arc4random()/UINT;
+    return (CGFloat)arc4random()/UINT32_MAX;
 }
 
 @implementation UIColor (RandomColor)
